@@ -15,7 +15,7 @@ module.exports = {
   // cacheDirectory: "C:\\Users\\Wade\\AppData\\Local\\Temp\\jest",
 
   // Automatically clear mock calls and instances between every test
-  clearMocks: true,
+  // clearMocks: true,
 
   // Indicates whether the coverage information should be collected while executing the test
   //collectCoverage: true,
@@ -122,7 +122,7 @@ module.exports = {
 
   // Allows you to use a custom runner instead of Jest's default test runner
   // runner: "jest-runner",
-  runner: "@jest-runner/electron/main",
+  runner: "<rootDir>/../jest-for-atom/fbJestRunner/build/index.js",
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
   // setupFiles: [],
@@ -135,7 +135,7 @@ module.exports = {
 
   // The test environment that will be used for testing
   //testEnvironment: "node",
-  testEnvironment: "<rootDir>/../jest-for-atom/jestRunner/mockAtomEnvironment.js",
+  testEnvironment: "<rootDir>/../jest-for-atom/fbJestRunner/build/environment.js",
 
   // Options that will be passed to the testEnvironment
   testEnvironmentOptions: {},
@@ -173,6 +173,7 @@ module.exports = {
   // A map from regular expressions to paths to transformers
   transform: {
     "^.+\\.js$": "<rootDir>/../jest-for-atom/jestRunner/transform.js"
+    //'\\.js$': p('jest/transform.js')
     //"^.+\\.js$": "<rootDir>\\node_modules\\babel-jest"
   },
 
