@@ -9,6 +9,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1.1.0
+    - name: Update Hydrogen to use preleases of @nteract packages
+      run: npm i --package-lock-only --no-package-lock @nteract/commutable@prerelease @nteract/markdown@prerelease @nteract/outputs@prerelease @nteract/presentational-components@prerelease @nteract/transform-vega@prerelease
     - uses: UziTech/action-setup-atom@v1.0.2
     - name: Install Hydrogen
       run: apm install
