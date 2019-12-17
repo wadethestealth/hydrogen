@@ -10,5 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: UziTech/action-setup-atom@v1.0.2
+    - name: Install Hydrogen
+      run: apm install
     - name: Test Hydrogen
       run: apm test
