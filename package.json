@@ -79,6 +79,7 @@
     "mobx-react": "^6.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-devtools": "^4.1.2",
     "react-rangeslider": "^2.1.0",
     "react-table": "^6.10.0",
     "spawnteract": "^5.1.0",
